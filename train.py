@@ -1,3 +1,14 @@
+# PixieDet training script
+#
+# Train the YuNet-based face detector on the WIDERFace dataset.
+#
+# Usage:
+#     python train.py --data_dir /path/to/widerface [options]
+#
+# The dataset directory must contain 'train/' and 'val/' subdirectories.
+# Checkpoints are written to '--checkpoint_dir' (default: 'checkpoints').
+# Use '--resume' to continue from the latest checkpoint.
+# Run 'python train.py --help' for a full list of configurable arguments.
 import os
 import argparse
 from collections import deque
